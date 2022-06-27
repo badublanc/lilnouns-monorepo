@@ -17,6 +17,9 @@ import PreLaunch from './pages/PreLaunch';
 import GovernancePage from './pages/Governance';
 import CreateProposalPage from './pages/CreateProposal';
 import VotePage from './pages/Vote';
+import IdeasPage from './pages/Ideas';
+import SubmitIdeaPage from './pages/SubmitIdea';
+import IdeaVotePage from './pages/IdeaVote';
 import NoundersPage from './pages/Nounders';
 import NounersPage from './pages/Nouners';
 import NotFoundPage from './pages/NotFound';
@@ -132,6 +135,9 @@ function App() {
               <Route exact path="/create-proposal" component={CreateProposalPage} />
               <Route exact path="/vote" component={GovernancePage} />
               <Route exact path="/vote/:id" component={VotePage} />
+              <Route exact path="/submit-idea" component={SubmitIdeaPage} />
+              <Route exact path="/ideas" component={IdeasPage} />
+              <Route exact path="/ideas/:id" component={IdeaVotePage} />
               <Route exact path="/playground" component={Playground} />
               <Route exact path="/nouniverse/:id" component={Nouniverse} />
               <Route exact path="/nouniverse" component={Nouniverse} />
